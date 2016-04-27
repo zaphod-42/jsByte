@@ -53,8 +53,8 @@ console.log(hex);
 
 # Methods
 
-  Bit Manipulation
-  
+###Bit Manipulation
+
 `getBit(index)`
 Returns the value of a bit at index (remember bits read right to left)
 
@@ -67,7 +67,7 @@ Inverts the bits (11011000 becomes 00100111)
 `flip()`
 Reverses the bits (11011000 becomes 00011011)
 
-  Casting
+### Casting
 
 `toString()`
 Returns the bits in a string
@@ -78,7 +78,7 @@ Returns the bits in an array
 `toInt()` and `valueOf()`
 Returns the integer value
 
-  Internal
+### Internal
 
 `setBits()`
 Sets the value of the bits based on the stored int value
