@@ -4,6 +4,17 @@ A simple javascript library that provides a "Byte" data type for manipulating by
 
 # Usage
 
+The constructor function accepts 3 arguments
+
+`Byte(val, base, size)`
+
+- val Mixed
+ - This should be a numeric value, but may be hex or other base besides 10 if "base" is set
+- base Int (optional)
+ - This should be the base of the original value, defaults to 10
+- size Int (optional)
+ - The number of bits this "byte" contains, defaults to 8
+
 ```
 var myInt = 235;
 var byte = new Byte(myInt);
