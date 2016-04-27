@@ -89,4 +89,4 @@ Sets the int value based on the stored bits
  
 ### Other Casting Methods
 
-This library also add a method to both the String and Number data types called `toByte(base size)`
+This library also add a method to both the String and Number data types called `toByte(base, size)`
