@@ -86,4 +86,7 @@ Sets the value of the bits based on the stored int value
 `setInt()`
 Sets the int value based on the stored bits
 
- This library also add a method to both the String and Number data types called `toByte(base size)`
+ 
+### Other Casting Methods
+
+This library also add a method to both the String and Number data types called `toByte(base size)`
