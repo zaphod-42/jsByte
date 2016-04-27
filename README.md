@@ -2,7 +2,7 @@
 
 A simple javascript library that provides a "Byte" data type for manipulating bytes/bits.
 
-#usage
+# Usage
 
 ```
 var myInt = 235;
@@ -39,3 +39,38 @@ var hex = "134".toByte().invert().setBit(5,1).flip().toBase(16);
 console.log(hex);
 //9e
 ```
+
+# Methods
+
+  Bit Manipulation
+  
+`getBit(index)`
+Returns the value of a bit at index (remember bits read right to left)
+
+`setBit(index, value)`
+Sets the value of bit at index
+
+`invert()`
+Inverts the bits (11011000 becomes 00100111)
+
+`flip()`
+Reverses the bits (11011000 becomes 00011011)
+
+  Casting
+
+`toString()`
+Returns the bits in a string
+
+`toArray()`
+Returns the bits in an array
+
+`toInt()` and `valueOf()`
+Returns the integer value
+
+  Internal
+
+`setBits()`
+Sets the value of the bits based on the stored int value
+
+`setInt()`
+Sets the int value based on the stored bits
