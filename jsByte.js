@@ -65,3 +65,11 @@ Byte.prototype.toArray = function(){
 Byte.prototype.valueOf = function(){
     return this._i;
 }
+
+
+/*
+ * Byte casting methods
+ */
+Number.prototype.toByte = String.prototype.toByte = function(base, size){
+    return new Byte(this, base, size);
+}
