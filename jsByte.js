@@ -73,3 +73,7 @@ Byte.prototype.valueOf = function(){
 Number.prototype.toByte = String.prototype.toByte = function(base, size){
     return new Byte(this, base, size);
 }
+Array.prototype.toByte = function(size){
+    return new Byte(this.join(""), 2, size);
+}
+}
