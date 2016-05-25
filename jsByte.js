@@ -62,7 +62,7 @@ Byte.prototype.toString = function(){
 Byte.prototype.toArray = function(){
     return this._b;
 }
-Byte.prototype.valueOf = function(){
+Byte.prototype.toInt = Byte.prototype.valueOf = function(){
     return this._i;
 }
 
