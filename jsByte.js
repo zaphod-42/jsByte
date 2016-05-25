@@ -57,7 +57,7 @@ Byte.prototype.toBase = function(b){
 
 //Type casting methods
 Byte.prototype.toString = function(){
-    return this._b.join('');
+    return this._b.join();
 }
 Byte.prototype.toArray = function(){
     return this._b;
