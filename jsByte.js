@@ -57,7 +57,7 @@ Byte.prototype.toBase = function(b){
 
 //Type casting methods
 Byte.prototype.toString = function(){
-    return this._b.join();
+    return this._b.join('');
 }
 Byte.prototype.toArray = function(){
     return this._b;
@@ -74,5 +74,5 @@ Number.prototype.toByte = String.prototype.toByte = function(base, size){
     return new Byte(this, base, size);
 }
 Array.prototype.toByte = function(size){
-    return new Byte(this.join(), 2, size);
+    return new Byte(this.join(''), 2, size);
 }
